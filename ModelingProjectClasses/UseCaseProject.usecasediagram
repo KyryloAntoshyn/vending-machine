@@ -1,0 +1,185 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="3d9f89ae-9440-47ea-827e-d7bb7043fff0" name="UseCase" linkedPackageId="5bcfcb7c-dd63-4fb4-8fbe-91db6579aa82" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="c332c515-191a-4cd5-96a6-ef8032122052" name="Покупець" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="f50685c9-e402-4973-a899-75a863332c48" />
+        <targetEnds>
+          <association Id="1d5cf25c-bf2b-4d01-b0ba-1843df00d674" isDerived="false" sourceEndRoleName="Покупець" targetEndRoleName="Внести гроші в автомат" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="dfff920f-bee0-43b7-ae16-29a34eb0691e" LastKnownName="Внести гроші в автомат" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="b1758c18-e69d-4059-8934-c13380e7201e" name="Покупець" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="7f4ad071-9455-444e-841d-4e66177703c2" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="c8b5ffa8-ce3d-4b6a-a997-1d57598c971c" name="Внести гроші в автомат" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="f3d72004-46e1-4af3-b3de-24ddc0c134a7" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="47df5724-b5df-4350-9f61-d07ba66c5d3d" />
+          </association>
+          <association Id="f620546c-3756-45b7-9b2d-be206a9e4ca9" isDerived="false" sourceEndRoleName="Покупець" targetEndRoleName="Вибрати товар" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="26bac1d1-40e4-4170-9443-0016cb6e0413" LastKnownName="Вибрати товар" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="0e3091d0-66c2-4de2-94c8-424c46fd513d" name="Покупець" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="1f86af87-1510-4d9e-9dc1-52bbd6c92e85" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="2a656a2a-ef3b-4184-ab5b-4f6dd3a08570" name="Вибрати товар" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="fae71429-ce5a-4a6c-918a-d6f88f48b01c" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="7cba85a2-efde-4631-9b5d-f21ded1c59bb" />
+          </association>
+          <association Id="df7769bb-032c-4b50-890d-8a7287ac3c20" isDerived="false" sourceEndRoleName="Покупець" targetEndRoleName="Повернути гроші" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="33866022-19ae-435a-9816-c8075a6da3d1" LastKnownName="Повернути гроші" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="f7a01cf3-7290-4093-b942-b59bf74b0bd6" name="Покупець" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="239f03f4-5b2a-4633-8e10-7ebe20846166" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="70bd5315-644a-493b-b713-91063861b506" name="Повернути гроші" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="e4752c53-5ce9-4fcb-9837-1ee9b06c0f51" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="ce646bf8-5068-4e61-abbb-01369e9c18cf" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="83adfc0c-0dae-4f88-bcaf-04ba8f891ae3" name="Системний адміністратор " isAbstract="false" isLeaf="false">
+        <elementDefinition Id="9c325e43-67eb-4bad-b4c1-faf8119077f0" />
+        <targetEnds>
+          <association Id="57b5e82e-0e50-4575-a019-a00a12dbc464" isDerived="false" sourceEndRoleName="Системний адміністратор " targetEndRoleName="Завантажити товар на лоток" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="45832b07-9e8e-4d4f-8ce9-9b2e8a6047d4" LastKnownName="Завантажити товар на лоток" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="32526459-94a0-4d93-bea2-fb948a9eaed3" name="Системний адміністратор " isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="8cb90d4d-d304-4ff9-97b6-808ec8c6b4e8" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="b6443fdb-36a1-4de6-a197-810b441571a1" name="Завантажити товар на лоток" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="4f7abf6b-f2e7-4f0b-bc3b-d18af60b853c" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="32d90fe5-70bc-4839-bff1-34da75d2c383" />
+          </association>
+          <association Id="77c96c67-7c42-4597-9633-a010a19da63f" isDerived="false" sourceEndRoleName="Системний адміністратор " targetEndRoleName="Натистуни &quot;секретну&quot; кнопку" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="22c411ab-1f96-47bc-903b-f18ec2f0be0c" LastKnownName="Натистуни &quot;секретну&quot; кнопку" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="92929342-adcc-43df-a942-2a8b372551be" name="Системний адміністратор " isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="7716ff6d-4929-4ebf-8332-6be086715415" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="27d47cb7-7fc7-4383-94bf-443572669e54" name="Натистуни &quot;секретну&quot; кнопку" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="242c36b4-3551-495d-8871-a18c8c5fbd85" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="7d3de1c8-476f-4c78-882a-d54402146973" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="dfff920f-bee0-43b7-ae16-29a34eb0691e" name="Внести гроші в автомат" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="fcbf0cc4-d14b-4627-b367-918eb5bb1e61" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="26bac1d1-40e4-4170-9443-0016cb6e0413" name="Вибрати товар" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="d383ad62-b618-4756-b173-d1c599a311f0" />
+        <extendedCases>
+          <extend Id="dec71cc7-cf5d-40d2-af07-86e804443334">
+            <useCaseMoniker Id="04c50b6c-ce6e-4979-b660-150720386870" LastKnownName="Натиснути на кнопку видачі" />
+            <elementDefinition Id="2da0378a-5fa4-4f32-873c-91ee12f973f1" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="33866022-19ae-435a-9816-c8075a6da3d1" name="Повернути гроші" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="ec0dee53-77d7-41e3-81e1-26ae2a331455" />
+        <additions>
+          <include Id="d88887e1-0595-485f-9b31-3c772144662c">
+            <useCaseMoniker Id="de36cdb9-aaf1-441b-9b27-a796d6860a12" LastKnownName="Ввести суму для повернення" />
+            <elementDefinition Id="ab2da4ac-94f2-4aa2-b913-eb26fcbc3bc5" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="45832b07-9e8e-4d4f-8ce9-9b2e8a6047d4" name="Завантажити товар на лоток" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="412615d4-8119-4354-8e86-dce1d5d2eace" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="d6324258-e3a3-4884-9214-c29e799bbb74" name="Ввести секретний пароль" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="35ada530-d4d6-4aee-a6eb-b72b6cba8430" />
+        <extendedCases>
+          <extend Id="62b7256f-741e-4a48-88ed-ac34529a9e2f">
+            <useCaseMoniker Id="91c042dc-1ebd-4856-896e-93ba0be887be" LastKnownName="Вилучити виручку" />
+            <elementDefinition Id="12be55fd-0d98-4487-9483-76831865a415" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="de36cdb9-aaf1-441b-9b27-a796d6860a12" name="Ввести суму для повернення" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="548cf255-3c8a-4c71-9371-b1c72f2394c3" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="22c411ab-1f96-47bc-903b-f18ec2f0be0c" name="Натистуни &quot;секретну&quot; кнопку" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="1e0ca908-e547-427d-8a43-5911a89446e4" />
+        <additions>
+          <include Id="300a08c2-e34d-40ab-b86e-1d96fd7da187">
+            <useCaseMoniker Id="d6324258-e3a3-4884-9214-c29e799bbb74" LastKnownName="Ввести секретний пароль" />
+            <elementDefinition Id="74680aca-e213-44e9-909b-e0c6d004019b" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="91c042dc-1ebd-4856-896e-93ba0be887be" name="Вилучити виручку" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="6a3f5a3d-5e9d-4de2-8efc-6230758a27e9" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="04c50b6c-ce6e-4979-b660-150720386870" name="Натиснути на кнопку видачі" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="1fcf1816-d93b-4ef4-b455-f5e24d3b4356" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="5bcfcb7c-dd63-4fb4-8fbe-91db6579aa82" name="ModelingProjectClasses">
+    <elementDefinition Id="ced34dd6-ca56-45b3-876d-c20d69cb1553" />
+    <profileInstances>
+      <packageHasProfileInstances Id="5f381d54-d189-489a-902e-5bd22e810567">
+        <profileInstance Id="0488b1e6-79e8-4341-bfde-500035bacdd1" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="681ecbe6-e810-492c-9b73-6fa66a004c50">
+        <profileInstance Id="816a62fe-523f-477d-9393-ad9747a77326" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</useCaseModelRoot>

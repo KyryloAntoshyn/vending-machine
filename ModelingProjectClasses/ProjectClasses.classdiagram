@@ -1,0 +1,755 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" dslVersion="1.0.0.0" Id="2762d814-110b-489f-8883-9864c2b0fbc1" name="ProjectClasses" linkedPackageId="e82eac9b-8c47-4183-ac4f-60f05622ae8e" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="b5cfbdf4-d28c-491d-9523-b318689b1b9e" name="Product" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="7cdc7c83-eafe-4891-b56b-1cc2e6dc4904" />
+        <targetEnds>
+          <association Id="9bd153a8-ab84-45d2-b418-5eb14c82c181" isDerived="false" sourceEndRoleName="Product" targetEndRoleName="Money" isLeaf="false" isAbstract="false">
+            <classMoniker Id="2671b6e9-f16c-49dc-9856-a6f1c649c895" LastKnownName="Money" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="cc9095e8-9552-446c-b249-36326fe1d015" name="Product" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="6e1a7a93-4044-4858-8c20-5ae8ac6e5088" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="7969a757-8445-412f-a147-95358cd77d93" name="Money" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="f892eb85-216b-4230-a3e2-5a9459871648" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="d18cfad3-61c5-41ad-94e8-89c3833f103c" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="5357ef9d-306a-4aa1-ac12-550396cc2af2" name="ProductName" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="83d8ef79-3668-4544-81de-82c976721737" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="3b1df868-3401-40eb-af7d-ee16fe88500e" LastKnownName="String" />
+            </type_NamedElement>
+          </property>
+          <property Id="261e45f8-7604-4948-8c2a-cd3e4b56498a" name="ProductPrice" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="912c9c26-ea87-4606-b9ff-3f54e3fb8034" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="d705d922-4942-4253-ba53-58289fbcdbf3" LastKnownName="Money" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="555a5258-721a-408d-9201-23c24a817eda" name="AddProductsToArray" isLeaf="false" isStatic="true" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="87c7d1ff-4735-40d4-927b-0fdca03a6383" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="8fa26964-328a-47d5-9bfb-9ee46ffafc76" name="params Product[] products" direction="In" isUnique="false">
+                  <elementDefinition Id="5515fed8-0bff-4311-9818-592316e0903b" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="1100144c-44d3-4fdd-958a-21a1b39bf518" direction="Return">
+                  <elementDefinition Id="cdde03d4-b867-40d0-a56b-fb37a8e9ba2b" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="3ff2c868-5361-4abd-a766-9f30e6760de1" LastKnownName="Product[]" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="3b1df868-3401-40eb-af7d-ee16fe88500e" name="String" isAbstract="false" isLeaf="false" cachedFullName="String">
+        <elementDefinition Id="59259974-6d55-42c6-b7bd-763d77ac8ef9" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="3ff2c868-5361-4abd-a766-9f30e6760de1" name="Product[]" isAbstract="false" isLeaf="false" cachedFullName="Product[]">
+        <elementDefinition Id="6a508888-39d9-429a-82c1-4e782e25dbe6" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="d705d922-4942-4253-ba53-58289fbcdbf3" name="Money" isAbstract="false" isLeaf="false" cachedFullName="Money">
+        <elementDefinition Id="36ea6eff-5466-4310-8a65-119a6daa2cfb" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="ad30f7c2-dab4-4428-990f-68e39cfcc3c9" name="Tray" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="998edaef-1c4b-4e19-80d0-6e92eb314488" />
+        <targetEnds>
+          <association Id="e8bf9dea-1ad8-4bd8-a458-d528d17b5cee" isDerived="false" sourceEndRoleName="Tray" targetEndRoleName="Product" isLeaf="false" isAbstract="false">
+            <classMoniker Id="b5cfbdf4-d28c-491d-9523-b318689b1b9e" LastKnownName="Product" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="44685b42-26a0-4eed-8c19-7fcdadd237b5" name="Tray" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="0d7d5255-c7fe-445a-a3f7-c0e23b4734ed" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="9ed5b4fc-5a53-4ce2-aa22-f07a66adc182" name="Product" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="123fae61-f001-42d2-9e54-3950285f47ac" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="f574e104-40e4-4c63-86a6-8687c8f91036" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="1c3a658a-9b61-4e09-9ad4-394cdcfee8b6" name="ProductsOnTray" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="7a0dc492-dd35-49e0-af98-55fc582ed557" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="8f3c2a82-fe96-4fee-af5b-5d32ce71eac7" LastKnownName="List&lt;Product&gt;" />
+            </type_NamedElement>
+          </property>
+          <property Id="d70e5bf5-85d0-46c5-8fdc-07f80b5483f7" name="TrayNumber" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="6e91bec7-e238-4adc-9652-64e771425aae" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="3a7fcee7-eeda-40e8-92cd-0054b58fffba" LastKnownName="Integer" />
+            </type_NamedElement>
+          </property>
+          <property Id="7e25e5de-a081-4d30-9493-050b2cc682a7" name="Reach" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="6f2ec472-c690-4366-a2de-c7e4c8de74f9" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="d6e87247-fad5-439f-aa9e-6f045fb767e8" LastKnownName="Boolean" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="8f3c2a82-fe96-4fee-af5b-5d32ce71eac7" name="List&lt;Product&gt;" isAbstract="false" isLeaf="false" cachedFullName="List&lt;Product&gt;">
+        <elementDefinition Id="072e057f-fa02-45e6-9ef6-fafb5ca2a001" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="3a7fcee7-eeda-40e8-92cd-0054b58fffba" name="Integer" isAbstract="false" isLeaf="false" cachedFullName="Integer">
+        <elementDefinition Id="220a3521-e091-4221-bae9-3ef9018e845c" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="d6e87247-fad5-439f-aa9e-6f045fb767e8" name="Boolean" isAbstract="false" isLeaf="false" cachedFullName="Boolean">
+        <elementDefinition Id="8943dc84-709e-4f62-b15a-a3273aa6f165" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="2671b6e9-f16c-49dc-9856-a6f1c649c895" name="Money" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="b311b257-0d95-499b-8843-43f33b13d8ed" />
+        <ownedAttributesInternal>
+          <property Id="c2bdb86f-2b9f-4125-85dd-0ab351428cc6" name="Cash" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="990b7815-742e-460f-9b55-04755654f39d" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="10aa5006-f827-46d5-91c7-47c0f681e6d4" LastKnownName="Integer" />
+            </type_NamedElement>
+          </property>
+          <property Id="212f50f2-c377-4d7f-a310-509f9814bacc" name="Coins" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="127e6814-8073-40d2-88df-e0bffdaa92a0" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="32a6991e-1a65-4de1-872c-d6a643406f79" LastKnownName="Integer" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="7cbf7972-54e1-4b16-ac02-b160dda169ea" name="CheckFakeCash" isLeaf="false" isStatic="true" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="463dffae-c53f-4fa0-8be1-6089c880b216" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="c32473a4-eb2b-44f5-ab4a-3b9abfb5eea4" name="int Cash" direction="In" isUnique="false">
+                  <elementDefinition Id="4a4ead90-71e5-45c7-8df7-c71716c3e3e2" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="702efbf7-c7be-4c46-a8a0-c80578610332" direction="Return">
+                  <elementDefinition Id="8e3e53c1-d6ff-437d-bd08-e9ecf12fc303" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="510b27b3-cf1a-4ee1-9c6d-f9c858ea9609" LastKnownName="Boolean" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="a3531d92-349d-40b7-a1af-cdf5d776a357" name="CheckFakeCoins" isLeaf="false" isStatic="true" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="332d593b-4057-4f99-83ac-0683046b3b72" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="a7f844a3-055d-49f1-8538-ff673485d8af" direction="Return">
+                  <elementDefinition Id="bf299428-8187-4ae5-9ea8-53e41a658eeb" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="a2cc4eca-0b24-4dc2-9f9d-a0f1341b2d47" LastKnownName="Boolean" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="a55e09c3-bd07-4466-8e55-64763963a751" name="int Coin" direction="In" isUnique="false">
+                  <elementDefinition Id="c1282257-5f0f-47a4-8bdb-8769884b821e" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="aaafca1b-2114-4b2d-812d-70dd4d49817f" name="operator+" isLeaf="false" isStatic="true" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="6e3c851a-5ed1-4519-b033-1f92463addf9" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="0e34b558-7c81-4137-bad8-60c799d3c277" direction="Return">
+                  <elementDefinition Id="a215534a-df92-4048-b691-131d1eb2d7ac" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="d3b2230d-2dfc-4c5d-9e0c-a9e4bf9a824b" LastKnownName="Money" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="1d0e1005-d9cc-4922-af6d-29eb12a4e380" name="Money obj1" direction="In" isUnique="false">
+                  <elementDefinition Id="e0b029f9-3f93-4b2a-9538-ce5c369a0195" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="dd458a74-dca6-417c-ab8a-bb6a5597f8c2" name="Money obj2" direction="In" isUnique="false">
+                  <elementDefinition Id="0cc16a21-a751-414d-9448-bd980d3b2778" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="cd3bc0d0-ac95-4a92-8993-80eaeb36b33e" name="operator-" isLeaf="false" isStatic="true" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="f2134f10-8262-454f-8247-ab6f54cdfefc" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="7a1ccbc3-fcc5-4ddc-8048-20e796416a52" direction="Return">
+                  <elementDefinition Id="b516d4e4-cb42-4d69-9eb7-8eefa29fff83" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="12a58228-a6d9-4bdf-84e9-1eb6e54aa2be" LastKnownName="Money" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="96a29539-efa4-4483-871f-cba36cb5bd75" name="Money obj1" direction="In" isUnique="false">
+                  <elementDefinition Id="997b7e0d-cf70-47e2-802b-fe29c7e0a85c" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="eed650c3-e35b-41d2-8a18-f415913ba368" name="Money obj2" direction="In" isUnique="false">
+                  <elementDefinition Id="41b734dd-b6cc-4c40-9b9b-8df833d2dfd6" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="26e9add4-76b0-4841-9369-9b3c07c29f82" name="operator&gt;" isLeaf="false" isStatic="true" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="e5c56851-62cb-4f02-b038-f7fd2499357d" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="f418542a-7686-488a-a28b-1ba419151c1d" name="Money obj1" direction="In" isUnique="false">
+                  <elementDefinition Id="c69c0c27-96f9-4ba9-ae2d-bd6bd1b002ea" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="ef780aab-228a-4538-a221-45a19fd4792a" name="Money obj2" direction="In" isUnique="false">
+                  <elementDefinition Id="a963c44d-0866-473b-9452-ca2a3b155931" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="7fc17489-2bda-4d10-84b3-4be0895973ca" direction="Return">
+                  <elementDefinition Id="22f29256-9433-43b1-8c58-f096cfa06c5c" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="a98aa5f2-e7fa-4e4e-be60-1016bf855ccf" LastKnownName="Boolean" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="f5cf9ae3-d19c-4e52-a538-2efcee1e2e86" name="operator&lt;" isLeaf="false" isStatic="true" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="142a11f4-1986-4d2c-8b74-2fb3c1ca3479" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="9445c4e8-33f4-4e0a-92db-eacb23037c4f" name="Money obj1" direction="In" isUnique="false">
+                  <elementDefinition Id="bec2d824-0642-44f5-8b48-31f8c06d8439" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="b7e149a9-31eb-408c-b215-d1c7e37182e8" name="Money obj2" direction="In" isUnique="false">
+                  <elementDefinition Id="4bad7fe9-35a5-4ab1-accf-1322f3b842fe" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="e01ccf66-38a1-4a18-8160-9b3e2c7422b0" direction="Return">
+                  <elementDefinition Id="d5745778-c052-47c6-913e-f26ab42f344e" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="389fb92e-c50a-48aa-8d43-53be97abf3c6" LastKnownName="Boolean" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="78f3e87d-a43c-4a6f-841f-61db14d8a985" name="operator&gt;=" isLeaf="false" isStatic="true" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="1c4d464b-9f44-4752-a567-5b75916ef991" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="7e0ef3bd-57e7-40f4-b8b0-6019cbd26735" name="Money obj1" direction="In" isUnique="false">
+                  <elementDefinition Id="459ea972-14bf-4d52-a511-a525543cd85b" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="3f4795ac-b26d-46f7-a08c-e23af8cd02f8" name="Money obj2" direction="In" isUnique="false">
+                  <elementDefinition Id="013f2f66-e0ee-42e6-92b4-fc20498cb766" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="65983907-1136-409a-8a2b-89c0d610b52b" direction="Return">
+                  <elementDefinition Id="1e6ee4bb-8db0-4374-af64-a547eed8241a" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="e51ee519-c064-44a6-adff-35c69065445b" LastKnownName="Boolean" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="ea0fa65e-e2e5-46fb-aee8-f4b306311434" name="operator&lt;=" isLeaf="false" isStatic="true" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="88f44d8d-2838-4b77-9f87-a1b503f911e9" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="dab22fce-a955-4e87-a5a8-d6ce80e32e7c" name="Money obj1" direction="In" isUnique="false">
+                  <elementDefinition Id="e59d61f9-4d1c-4c4b-9321-74f1c87ce67a" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="e152f466-b6c1-4335-985d-45c107c872bb" name="Money obj2" direction="In" isUnique="false">
+                  <elementDefinition Id="21a42a73-1884-4fbd-b227-2829205b3e41" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="9049cc8b-4674-4243-b0e9-30f97dd0824c" direction="Return">
+                  <elementDefinition Id="b7d272f7-92a7-43cd-944e-9c21b615babd" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="cc472a3f-355b-48d8-87a1-f905e1827fbb" LastKnownName="Boolean" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="ed8e5514-a216-4f38-af98-1bbf3361c37f" name="ToString" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="b592f27a-2a3b-4eef-ad48-eb9318da4879" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="068e0f48-ce70-4c11-8e96-47edb2cc7fbd" direction="Return">
+                  <elementDefinition Id="da28be98-9bbd-4b0b-b22c-5005f5f53177" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="d0375487-06c3-4bbf-b36e-8a547c92bf29" LastKnownName="String" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="10aa5006-f827-46d5-91c7-47c0f681e6d4" name="Integer" isAbstract="false" isLeaf="false" cachedFullName="Integer">
+        <elementDefinition Id="220a3521-e091-4221-bae9-3ef9018e845c" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="32a6991e-1a65-4de1-872c-d6a643406f79" name="Integer" isAbstract="false" isLeaf="false" cachedFullName="Integer">
+        <elementDefinition Id="220a3521-e091-4221-bae9-3ef9018e845c" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="510b27b3-cf1a-4ee1-9c6d-f9c858ea9609" name="Boolean" isAbstract="false" isLeaf="false" cachedFullName="Boolean">
+        <elementDefinition Id="8943dc84-709e-4f62-b15a-a3273aa6f165" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="a2cc4eca-0b24-4dc2-9f9d-a0f1341b2d47" name="Boolean" isAbstract="false" isLeaf="false" cachedFullName="Boolean">
+        <elementDefinition Id="8943dc84-709e-4f62-b15a-a3273aa6f165" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="d3b2230d-2dfc-4c5d-9e0c-a9e4bf9a824b" name="Money" isAbstract="false" isLeaf="false" cachedFullName="ModelingProjectClasses::Money">
+        <elementDefinition Id="b311b257-0d95-499b-8843-43f33b13d8ed" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="12a58228-a6d9-4bdf-84e9-1eb6e54aa2be" name="Money" isAbstract="false" isLeaf="false" cachedFullName="ModelingProjectClasses::Money">
+        <elementDefinition Id="b311b257-0d95-499b-8843-43f33b13d8ed" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="cddec501-efe0-4423-8ba7-c7fe621e3b94" name="Money" isAbstract="false" isLeaf="false" cachedFullName="ModelingProjectClasses::Money">
+        <elementDefinition Id="b311b257-0d95-499b-8843-43f33b13d8ed" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="5fd0bde6-71fd-455c-87fd-ba770b50e29f" name="Money" isAbstract="false" isLeaf="false" cachedFullName="ModelingProjectClasses::Money">
+        <elementDefinition Id="b311b257-0d95-499b-8843-43f33b13d8ed" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="a98aa5f2-e7fa-4e4e-be60-1016bf855ccf" name="Boolean" isAbstract="false" isLeaf="false" cachedFullName="Boolean">
+        <elementDefinition Id="8943dc84-709e-4f62-b15a-a3273aa6f165" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="389fb92e-c50a-48aa-8d43-53be97abf3c6" name="Boolean" isAbstract="false" isLeaf="false" cachedFullName="Boolean">
+        <elementDefinition Id="8943dc84-709e-4f62-b15a-a3273aa6f165" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="e51ee519-c064-44a6-adff-35c69065445b" name="Boolean" isAbstract="false" isLeaf="false" cachedFullName="Boolean">
+        <elementDefinition Id="8943dc84-709e-4f62-b15a-a3273aa6f165" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="cc472a3f-355b-48d8-87a1-f905e1827fbb" name="Boolean" isAbstract="false" isLeaf="false" cachedFullName="Boolean">
+        <elementDefinition Id="8943dc84-709e-4f62-b15a-a3273aa6f165" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="d0375487-06c3-4bbf-b36e-8a547c92bf29" name="String" isAbstract="false" isLeaf="false" cachedFullName="String">
+        <elementDefinition Id="59259974-6d55-42c6-b7bd-763d77ac8ef9" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="4d59a74b-8e56-4bd2-b368-71325377df39" name="ServiceStation" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="4600b89e-37f3-4da3-a33a-4d4832d34448" />
+        <targetEnds>
+          <association Id="1c69d9c2-d2e1-4f67-a194-fa48bbc96f92" isDerived="false" sourceEndRoleName="ServiceStation" targetEndRoleName="Money" isLeaf="false" isAbstract="false">
+            <classMoniker Id="2671b6e9-f16c-49dc-9856-a6f1c649c895" LastKnownName="Money" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="b6a5171b-b107-41f3-a613-04e463c35163" name="ServiceStation" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="c9fb8c9d-399f-4342-bf45-3ad9e65ae2de" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="c7f98167-38fb-4c7a-8b1f-cf68694793e2" name="Money" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
+                  <elementDefinition Id="b4b5908f-9534-468d-9761-75915ca82bf2" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="d044af6d-1cc1-45cd-afee-fb0b0a744aa7" />
+          </association>
+          <association Id="c06e2cf6-54e9-4ae1-8828-41f8a65a5296" isDerived="false" sourceEndRoleName="ServiceStation" targetEndRoleName="Product" isLeaf="false" isAbstract="false">
+            <classMoniker Id="b5cfbdf4-d28c-491d-9523-b318689b1b9e" LastKnownName="Product" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="c566ee1d-a8b6-4d79-898a-5684bb1c58e1" name="ServiceStation" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="7c37fe56-6707-4951-8456-647e0bf09972" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="e9fdd074-a07a-4450-86b4-59cb565bd804" name="Product" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
+                  <elementDefinition Id="bca56057-e6df-4b5d-bd81-f138b3725016" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="99b3fa42-930a-4086-aca6-1c59a0d6dca9" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="792317a8-c463-4697-87d7-15598d9785b6" name="AvailableProducts" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="b90cd1ec-9b25-4b5e-9b6a-078b42803b82" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="0a90567c-477f-4bb5-b65c-e264d7bc862b" LastKnownName="List&lt;List&lt;Product&gt;&gt;" />
+            </type_NamedElement>
+          </property>
+          <property Id="fe4c7695-4cab-458b-8418-e6456afe49a9" name="StationMoney" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="00a299fe-52c2-473b-a9ad-8110d6f914d4" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="e432a17d-bcc1-47bd-a270-87dab4941651" LastKnownName="Money" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="e7b0eb42-0247-40f8-8d22-9cbe51f64059" name="AddDefaults" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="7cd07bd5-9c14-40fb-8820-5f6aaad73b8d" />
+          </operation>
+          <operation Id="efd45aba-d251-4b0e-a592-ca6e0864dd18" name="Load" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="039df8a6-2487-460c-b8f7-a77ace8416be" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="85feacd4-f4e3-419d-9415-8f53f0a60250" direction="Return">
+                  <elementDefinition Id="fb997e37-7800-4c5b-98eb-df2952e5e99e" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="97ccf99b-fd7a-4f8d-9dbe-812897ec8030" LastKnownName="Boolean" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="1fdda41b-db3d-4826-af28-37629741e768" name="Save" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="8dcba41f-0682-4782-9c07-65f25142b282" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="0b1017a7-4fd0-40f3-8913-ed0e712071d2" direction="Return">
+                  <elementDefinition Id="a0e37f12-2e4f-4717-8225-5165262698f9" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="4476fae8-8dc8-4574-bd96-c5affb632fb3" LastKnownName="Boolean" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="e9653627-2586-4994-8110-652ed5baa282" name="ProductToMachine" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="e08c6c2c-1bbe-4898-8fcd-c1b349da936b" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="fc549738-1991-4973-97e8-da658d7e09e2" name="object obj" direction="In" isUnique="false">
+                  <elementDefinition Id="0a921577-483f-4cb8-a94a-f994ca2851e1" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="8ecda2b6-e202-4122-bc12-ac4ad8681f95" name="Tray Tray" direction="In" isUnique="false">
+                  <elementDefinition Id="139568d4-e493-407d-9b71-812f8c751201" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="0a90567c-477f-4bb5-b65c-e264d7bc862b" name="List&lt;List&lt;Product&gt;&gt;" isAbstract="false" isLeaf="false" cachedFullName="List&lt;List&lt;Product&gt;&gt;">
+        <elementDefinition Id="55f05fe5-b98c-44e4-b4de-15bb50bb4522" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="e432a17d-bcc1-47bd-a270-87dab4941651" name="Money" isAbstract="false" isLeaf="false" cachedFullName="ModelingProjectClasses::Money">
+        <elementDefinition Id="b311b257-0d95-499b-8843-43f33b13d8ed" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="97ccf99b-fd7a-4f8d-9dbe-812897ec8030" name="Boolean" isAbstract="false" isLeaf="false" cachedFullName="Boolean">
+        <elementDefinition Id="8943dc84-709e-4f62-b15a-a3273aa6f165" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="4476fae8-8dc8-4574-bd96-c5affb632fb3" name="Boolean" isAbstract="false" isLeaf="false" cachedFullName="Boolean">
+        <elementDefinition Id="8943dc84-709e-4f62-b15a-a3273aa6f165" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="c1134dfe-68bd-410c-ba17-4231c2069cb0" name="Machine" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="c82d001f-2fd4-4ee3-a3a6-c1b6b3a934fe" />
+        <targetEnds>
+          <association Id="5ec9c4ec-61d5-4942-8efa-044fbd8476e3" isDerived="false" sourceEndRoleName="Machine" targetEndRoleName="Money" isLeaf="false" isAbstract="false">
+            <classMoniker Id="2671b6e9-f16c-49dc-9856-a6f1c649c895" LastKnownName="Money" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="36992d79-ccac-4429-a392-1f0b16a5c2eb" name="Machine" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="0f488d8b-b81c-408a-90ff-c0d84c5b5174" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="ca55bd54-2b6b-49bd-8b8a-08fd6de68dcc" name="Money" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
+                  <elementDefinition Id="397f2ecf-6012-4cda-af89-a2c5885e6ef6" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="d43c3b44-33c8-45f5-82c0-b5a703a49241" />
+          </association>
+          <association Id="31d3ff5b-1306-4bb1-a29d-30dabbe2caaa" isDerived="false" sourceEndRoleName="Machine" targetEndRoleName="Tray" isLeaf="false" isAbstract="false">
+            <classMoniker Id="ad30f7c2-dab4-4428-990f-68e39cfcc3c9" LastKnownName="Tray" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="8df10ad4-4a1f-49a5-9fef-55f4673d8582" name="Machine" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="b26a0810-ddc7-4d95-94b4-78e6cee3035a" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="eeb218e8-0739-4feb-a389-7a90fcaa5971" name="Tray" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
+                  <elementDefinition Id="8be9a5e4-ca76-4275-9c2a-1568e6f25edf" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="b5323d48-513e-473c-afc7-ebe56b3ccada" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="bd24c438-6ed4-415c-8053-53b0292a9af3" name="Trays" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="8deb0df9-18ca-4bd4-93c4-4a13b7f47e36" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="dd5956d0-7045-4dfc-8054-13323a061563" LastKnownName="Tray[]" />
+            </type_NamedElement>
+          </property>
+          <property Id="1f345b89-b541-4c1e-b7ad-6a25cf1d1122" name="SecretPassword" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="d621eb08-51bc-4d46-8629-5cfccafe02b1" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="d0bf4732-9a17-4fb4-a5b6-27e6478e2dda" LastKnownName="String" />
+            </type_NamedElement>
+          </property>
+          <property Id="6702b75b-1a17-432d-a2b6-be1c53671f96" name="CashInto" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="f500a8b6-669e-45ba-8bbc-7a3d8df5c987" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="888351d1-2ef1-4f63-881b-9004e315d807" LastKnownName="Money" />
+            </type_NamedElement>
+          </property>
+          <property Id="c39321c0-e748-4f84-a73e-ecd4ba3b3b6c" name="MachineMoney" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="d4242bd9-4366-4528-b53e-8814c6a2db48" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="56170b6a-9ac2-45d2-b728-b779f30784bd" LastKnownName="Money" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="d6447821-b926-4f3a-a9dc-a81c9beca81f" name="Add_Defaults" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="a1bb8d0e-cf76-486d-93b0-142ea1c4261c" />
+          </operation>
+          <operation Id="58bbd8f4-c141-47ee-9d3e-4fb98558337a" name="Load" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="d1362d46-3554-489a-994c-775f9107b111" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="6437bc38-39a6-4c34-9454-5cd99a3e10de" direction="Return">
+                  <elementDefinition Id="5a26a2cf-7152-475d-82a3-d73d81ba2cda" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="4a358425-db4b-44e5-9ccd-765ffbc16a95" LastKnownName="Boolean" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="acb2951a-7ce9-44de-9921-fd92ef0897b7" name="Save" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="8abf62b9-1207-44ab-b249-4576ba6a4b3e" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="9903da83-ef55-4078-adf9-ea06c05413e6" direction="Return">
+                  <elementDefinition Id="d1300148-dc9b-4cec-ac5b-f0cdf26b535b" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="35181a99-d8af-426b-8735-1626fa9f69df" LastKnownName="Boolean" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="87fd8482-bbd2-45f4-b28f-75c5f766a414" name="CheckPassword" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="8d4880c5-f9d7-489a-9604-4e200a06c6a6" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="3af34d5e-d22b-4f0c-b567-db7635922e65" name="string password" direction="In" isUnique="false">
+                  <elementDefinition Id="39b39a1b-b5e7-497f-b6ff-45f9ebe64189" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="9ce3fe62-dc0d-44f3-a7e3-dffbc006ac81" direction="Return">
+                  <elementDefinition Id="2553048c-4a20-44fc-a099-f3da7d7492ae" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="59debaac-c9c0-4f68-9b96-3072dcce26b9" LastKnownName="Boolean" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="0fb90267-9123-415a-8708-d34d37e0549e" name="CheckUserMoneyAllProducts" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="df20c1f8-973e-4cc2-84e5-ed82833ff09b" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="8654fc35-99d0-43ef-ba85-fb260c615909" direction="Return">
+                  <elementDefinition Id="ee53897e-969b-4fe1-883c-59bca79aee77" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="6fd41cc0-f094-4fc2-92b9-8bd907284b88" LastKnownName="Boolean" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="25b5d4c8-e2cf-4b62-9c82-504b3841681b" name="CheckProductAvailable" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="7749966b-12e7-4f3d-811f-d65f4da782e5" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="308bf088-0e6c-40df-8c6f-8cac2b76986d" direction="Return">
+                  <elementDefinition Id="e6f8f5ed-7d19-4106-a6a9-0e9e821f663c" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="a8e6ce30-6f97-4d0f-b5e1-490c2c5b66ad" LastKnownName="Boolean" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="4b398772-a277-4d74-ba19-c4e9b3c692bf" name="GetProduct" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="71a637f8-4307-412c-9690-e9b0b131f018" />
+          </operation>
+          <operation Id="a491e12c-df2d-49b3-ab32-8c37194bdbd7" name="CheckUserCash" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="6101c3a9-8ea1-49cc-936d-691691113477" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="440c0b9c-d0c6-4d9f-be9e-a362e942ccf3" direction="Return">
+                  <elementDefinition Id="0f1ffef3-5133-4db5-89c8-310f58c9c025" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="3113cca5-5049-4510-bae7-8da81e706703" LastKnownName="Boolean" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="7e384026-272d-4d27-870f-d31d42ddbc5a" name="Money productPrice)" direction="In" isUnique="false">
+                  <elementDefinition Id="066aaa50-d9ac-4111-8ac1-e7f729075d9b" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="dd5956d0-7045-4dfc-8054-13323a061563" name="Tray[]" isAbstract="false" isLeaf="false" cachedFullName="Tray[]">
+        <elementDefinition Id="60af8708-7663-4675-83fe-25ce701f3089" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="56170b6a-9ac2-45d2-b728-b779f30784bd" name="Money" isAbstract="false" isLeaf="false" cachedFullName="ModelingProjectClasses::Money">
+        <elementDefinition Id="b311b257-0d95-499b-8843-43f33b13d8ed" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="888351d1-2ef1-4f63-881b-9004e315d807" name="Money" isAbstract="false" isLeaf="false" cachedFullName="ModelingProjectClasses::Money">
+        <elementDefinition Id="b311b257-0d95-499b-8843-43f33b13d8ed" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="d0bf4732-9a17-4fb4-a5b6-27e6478e2dda" name="String" isAbstract="false" isLeaf="false" cachedFullName="String">
+        <elementDefinition Id="59259974-6d55-42c6-b7bd-763d77ac8ef9" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="4a358425-db4b-44e5-9ccd-765ffbc16a95" name="Boolean" isAbstract="false" isLeaf="false" cachedFullName="Boolean">
+        <elementDefinition Id="8943dc84-709e-4f62-b15a-a3273aa6f165" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="35181a99-d8af-426b-8735-1626fa9f69df" name="Boolean" isAbstract="false" isLeaf="false" cachedFullName="Boolean">
+        <elementDefinition Id="8943dc84-709e-4f62-b15a-a3273aa6f165" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="59debaac-c9c0-4f68-9b96-3072dcce26b9" name="Boolean" isAbstract="false" isLeaf="false" cachedFullName="Boolean">
+        <elementDefinition Id="8943dc84-709e-4f62-b15a-a3273aa6f165" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="6fd41cc0-f094-4fc2-92b9-8bd907284b88" name="Boolean" isAbstract="false" isLeaf="false" cachedFullName="Boolean">
+        <elementDefinition Id="8943dc84-709e-4f62-b15a-a3273aa6f165" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="a8e6ce30-6f97-4d0f-b5e1-490c2c5b66ad" name="Boolean" isAbstract="false" isLeaf="false" cachedFullName="Boolean">
+        <elementDefinition Id="8943dc84-709e-4f62-b15a-a3273aa6f165" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="3113cca5-5049-4510-bae7-8da81e706703" name="Boolean" isAbstract="false" isLeaf="false" cachedFullName="Boolean">
+        <elementDefinition Id="8943dc84-709e-4f62-b15a-a3273aa6f165" />
+      </referencedType>
+    </packageHasNamedElement>
+  </packagedElements>
+  <package Id="e82eac9b-8c47-4183-ac4f-60f05622ae8e" name="ModelingProjectClasses">
+    <elementDefinition Id="ced34dd6-ca56-45b3-876d-c20d69cb1553" />
+    <profileInstances>
+      <packageHasProfileInstances Id="b7b9d952-1359-437a-89bc-a75857c49ccb">
+        <profileInstance Id="663ff0fc-8593-44d1-b889-72a66f7db045" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="e58ec1b3-3e0a-426d-9053-6b3403309723">
+        <profileInstance Id="5a80b6db-7641-422b-9f3c-e55ea8272386" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</logicalClassDesignerModel>

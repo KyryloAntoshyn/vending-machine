@@ -1,0 +1,1832 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel"
+  dslVersion="1.0.0.0"
+  Id="ced34dd6-ca56-45b3-876d-c20d69cb1553"
+  name="ModelingProjectClasses" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <profileInstances>
+    <packageHasProfileInstances
+      Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b">
+      <profileInstance
+        Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791"
+        name="StandardProfileL2" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances
+      Id="29349502-908c-4fda-9054-c48619c59ed0">
+      <profileInstance
+        Id="532ea607-fb19-44b8-8502-3351b05452be"
+        name="StandardProfileL3" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <actor
+        Id="f50685c9-e402-4973-a899-75a863332c48"
+        name="Покупець"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="47df5724-b5df-4350-9f61-d07ba66c5d3d"
+            isDerived="false"
+            sourceEndRoleName="Покупець"
+            targetEndRoleName="Внести гроші в автомат"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="fcbf0cc4-d14b-4627-b367-918eb5bb1e61"
+              LastKnownName="Внести гроші в автомат"
+              LastKnownLocation="ModelingProjectClasses.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="7f4ad071-9455-444e-841d-4e66177703c2"
+                  name="Покупець"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="f3d72004-46e1-4af3-b3de-24ddc0c134a7"
+                  name="Внести гроші в автомат"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="7cba85a2-efde-4631-9b5d-f21ded1c59bb"
+            isDerived="false"
+            sourceEndRoleName="Покупець"
+            targetEndRoleName="Вибрати товар"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="d383ad62-b618-4756-b173-d1c599a311f0"
+              LastKnownName="Вибрати товар"
+              LastKnownLocation="ModelingProjectClasses.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="1f86af87-1510-4d9e-9dc1-52bbd6c92e85"
+                  name="Покупець"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="fae71429-ce5a-4a6c-918a-d6f88f48b01c"
+                  name="Вибрати товар"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="ce646bf8-5068-4e61-abbb-01369e9c18cf"
+            isDerived="false"
+            sourceEndRoleName="Покупець"
+            targetEndRoleName="Повернути гроші"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="ec0dee53-77d7-41e3-81e1-26ae2a331455"
+              LastKnownName="Повернути гроші"
+              LastKnownLocation="ModelingProjectClasses.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="239f03f4-5b2a-4633-8e10-7ebe20846166"
+                  name="Покупець"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="e4752c53-5ce9-4fcb-9837-1ee9b06c0f51"
+                  name="Повернути гроші"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="9c325e43-67eb-4bad-b4c1-faf8119077f0"
+        name="Системний адміністратор "
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="f62f4320-e264-4785-b91d-0c8cadb46061"
+            isDerived="false"
+            sourceEndRoleName="Системний адміністратор "
+            targetEndRoleName="Вилучити виручку"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="fb665be4-e736-4421-9e45-ef0b0b76a2cf"
+              LastKnownName=","
+              LastKnownLocation="ModelingProjectClasses.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="6ba459be-d8b3-485b-a40c-65ea7d3c5808"
+                  name="Системний адміністратор "
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="ecb883ea-2a94-4741-8000-641bbb405072"
+                  name="Вилучити виручку"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="32d90fe5-70bc-4839-bff1-34da75d2c383"
+            isDerived="false"
+            sourceEndRoleName="Системний адміністратор "
+            targetEndRoleName="Завантажити товар на лоток"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="412615d4-8119-4354-8e86-dce1d5d2eace"
+              LastKnownName="Завантажити товар на лоток"
+              LastKnownLocation="ModelingProjectClasses.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="8cb90d4d-d304-4ff9-97b6-808ec8c6b4e8"
+                  name="Системний адміністратор "
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="4f7abf6b-f2e7-4f0b-bc3b-d18af60b853c"
+                  name="Завантажити товар на лоток"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="7d3de1c8-476f-4c78-882a-d54402146973"
+            isDerived="false"
+            sourceEndRoleName="Системний адміністратор "
+            targetEndRoleName="Натистуни &quot;секретну&quot; кнопку"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="1e0ca908-e547-427d-8a43-5911a89446e4"
+              LastKnownName="Натистуни &quot;секретну&quot; кнопку"
+              LastKnownLocation="ModelingProjectClasses.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="7716ff6d-4929-4ebf-8332-6be086715415"
+                  name="Системний адміністратор "
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="242c36b4-3551-495d-8871-a18c8c5fbd85"
+                  name="Натистуни &quot;секретну&quot; кнопку"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="fcbf0cc4-d14b-4627-b367-918eb5bb1e61"
+        name="Внести гроші в автомат"
+        isAbstract="false"
+        isLeaf="false">
+        <generalsInternal>
+          <generalization
+            Id="1d53bfbb-1f21-46f4-9a16-05218d0e63dd"
+            isSubstitutable="false">
+            <useCaseMoniker
+              Id="6a0d48ce-84b4-48e5-8bb1-9f569ee50c38"
+              LastKnownName="Прийняти гроші користувача"
+              LastKnownLocation="ModelingProjectClasses.uml" />
+          </generalization>
+        </generalsInternal>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="d383ad62-b618-4756-b173-d1c599a311f0"
+        name="Вибрати товар"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="2da0378a-5fa4-4f32-873c-91ee12f973f1">
+            <useCaseMoniker
+              Id="1fcf1816-d93b-4ef4-b455-f5e24d3b4356"
+              LastKnownName="Натиснути на кнопку видачі"
+              LastKnownLocation="ModelingProjectClasses.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="c1764c99-5bd7-463a-9067-fb69dcb3a4e8"
+        name="Торговий автомат"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="6089f7a1-60c5-46c6-8b86-91e8ac03d54d"
+            isDerived="false"
+            sourceEndRoleName="Торговий автомат"
+            targetEndRoleName="Відслітковувати наявність продукції"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="f6d84fdb-27de-4e9c-9aca-4b98b8d8e677"
+              LastKnownName="Перевіряти наявніть пустих лотків"
+              LastKnownLocation="ModelingProjectClasses.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="9826b353-bd47-49e0-abd6-af155c8e38d7"
+                  name="Торговий автомат"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="b9495a55-ae16-4854-9ffa-3d4c4ac3143d"
+                  name="Відслітковувати наявність продукції"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="71a00e20-2c93-41d6-b4df-c9d753feb72b"
+            isDerived="false"
+            sourceEndRoleName="Торговий автомат"
+            targetEndRoleName="Відобразити поточну суму грошей"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="4ec02300-c6ac-4334-8f29-9a7847195843"
+              LastKnownName="Відобразити  гроші в автоматі"
+              LastKnownLocation="ModelingProjectClasses.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="a1631797-ab40-4d3e-a3b8-b58de01960c2"
+                  name="Торговий автомат"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="d0f23e4c-bb92-4485-8a32-bcf3be6697e3"
+                  name="Відобразити поточну суму грошей"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="ff19e4c7-fad0-46ac-878e-054eaa446f67"
+            isDerived="false"
+            sourceEndRoleName="Торговий автомат"
+            targetEndRoleName="Прийняти гроші користувача"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="6a0d48ce-84b4-48e5-8bb1-9f569ee50c38"
+              LastKnownName="Прийняти гроші користувача"
+              LastKnownLocation="ModelingProjectClasses.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="57687007-72a4-40f6-b040-83c364797337"
+                  name="Торговий автомат"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="85e678b0-e69e-4744-a6de-5ee0113df4b7"
+                  name="Прийняти гроші користувача"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="a8ae1edd-cb35-45c9-a36a-22d0d759b667"
+            isDerived="false"
+            sourceEndRoleName="Торговий автомат"
+            targetEndRoleName="Видати товар"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="0b07d943-6b2f-4f46-aa22-6228a40cc317"
+              LastKnownName="Видати товар"
+              LastKnownLocation="ModelingProjectClasses.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="96dddf45-8615-4f1d-bb4b-0ae66284c63c"
+                  name="Торговий автомат"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="fec2d3e1-12a6-4785-9094-99f2186e397b"
+                  name="Видати товар"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="943ec47f-46f2-4ec5-9585-74cb95b7ed93"
+            isDerived="false"
+            sourceEndRoleName="Торговий автомат"
+            targetEndRoleName="Повернути гроші клієнту"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="596a1ff0-64da-43f7-8074-330a6a9ba185"
+              LastKnownName="Повернути гроші клієнту"
+              LastKnownLocation="ModelingProjectClasses.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="d0db50f0-cec1-4168-ab71-8c4f4f38ffe7"
+                  name="Торговий автомат"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="198b9b43-db78-41b5-affa-8451956b3f93"
+                  name="Повернути гроші клієнту"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="ec0dee53-77d7-41e3-81e1-26ae2a331455"
+        name="Повернути гроші"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="ab2da4ac-94f2-4aa2-b913-eb26fcbc3bc5">
+            <useCaseMoniker
+              Id="548cf255-3c8a-4c71-9371-b1c72f2394c3"
+              LastKnownName="Ввести суму для повернення"
+              LastKnownLocation="ModelingProjectClasses.uml" />
+          </include>
+        </additions>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="fb665be4-e736-4421-9e45-ef0b0b76a2cf"
+        name=","
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="412615d4-8119-4354-8e86-dce1d5d2eace"
+        name="Завантажити товар на лоток"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="4ec02300-c6ac-4334-8f29-9a7847195843"
+        name="Відобразити  гроші в автоматі"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="596a1ff0-64da-43f7-8074-330a6a9ba185"
+        name="Повернути гроші клієнту"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="ae1b72de-414c-4e23-82af-e33017babb3d">
+            <useCaseMoniker
+              Id="548cf255-3c8a-4c71-9371-b1c72f2394c3"
+              LastKnownName="Ввести суму для повернення"
+              LastKnownLocation="ModelingProjectClasses.uml" />
+          </include>
+        </additions>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="35ada530-d4d6-4aee-a6eb-b72b6cba8430"
+        name="Ввести секретний пароль"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="12be55fd-0d98-4487-9483-76831865a415">
+            <useCaseMoniker
+              Id="6a3f5a3d-5e9d-4de2-8efc-6230758a27e9"
+              LastKnownName="Вилучити виручку"
+              LastKnownLocation="ModelingProjectClasses.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="fd2c33be-dd77-4398-9b4c-7d8e0dda607c"
+        name="Повідомити станцію про пустий лоток"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="f6d84fdb-27de-4e9c-9aca-4b98b8d8e677"
+        name="Перевіряти наявніть пустих лотків"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="7020b44f-4f5b-4640-b61c-f9986c36a038">
+            <useCaseMoniker
+              Id="fd2c33be-dd77-4398-9b4c-7d8e0dda607c"
+              LastKnownName="Повідомити станцію про пустий лоток"
+              LastKnownLocation="ModelingProjectClasses.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="6a0d48ce-84b4-48e5-8bb1-9f569ee50c38"
+        name="Прийняти гроші користувача"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="0b07d943-6b2f-4f46-aa22-6228a40cc317"
+        name="Видати товар"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="d2db88e5-89b4-4a88-8d39-dd2a7e1a8930">
+            <useCaseMoniker
+              Id="d383ad62-b618-4756-b173-d1c599a311f0"
+              LastKnownName="Вибрати товар"
+              LastKnownLocation="ModelingProjectClasses.uml" />
+          </include>
+        </additions>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="548cf255-3c8a-4c71-9371-b1c72f2394c3"
+        name="Ввести суму для повернення"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="1e0ca908-e547-427d-8a43-5911a89446e4"
+        name="Натистуни &quot;секретну&quot; кнопку"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="74680aca-e213-44e9-909b-e0c6d004019b">
+            <useCaseMoniker
+              Id="35ada530-d4d6-4aee-a6eb-b72b6cba8430"
+              LastKnownName="Ввести секретний пароль"
+              LastKnownLocation="ModelingProjectClasses.uml" />
+          </include>
+        </additions>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="6a3f5a3d-5e9d-4de2-8efc-6230758a27e9"
+        name="Вилучити виручку"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="1fcf1816-d93b-4ef4-b455-f5e24d3b4356"
+        name="Натиснути на кнопку видачі"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="7cdc7c83-eafe-4891-b56b-1cc2e6dc4904"
+        name="Product"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="d18cfad3-61c5-41ad-94e8-89c3833f103c"
+            isDerived="false"
+            sourceEndRoleName="Product"
+            targetEndRoleName="Money"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="b311b257-0d95-499b-8843-43f33b13d8ed"
+              LastKnownName="Money"
+              LastKnownLocation="ModelingProjectClasses.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="6e1a7a93-4044-4858-8c20-5ae8ac6e5088"
+                  name="Product"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Shared"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="f892eb85-216b-4230-a3e2-5a9459871648"
+                  name="Money"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="83d8ef79-3668-4544-81de-82c976721737"
+            name="ProductName"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="ModelingProjectClasses.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="912c9c26-ea87-4606-b9ff-3f54e3fb8034"
+            name="ProductPrice"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="36ea6eff-5466-4310-8a65-119a6daa2cfb"
+                LastKnownName="Money"
+                LastKnownLocation="ModelingProjectClasses.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="87c7d1ff-4735-40d4-927b-0fdca03a6383"
+            name="AddProductsToArray"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="5515fed8-0bff-4311-9818-592316e0903b"
+                  name="params Product[] products"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="cdde03d4-b867-40d0-a56b-fb37a8e9ba2b"
+                  direction="Return">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="6a508888-39d9-429a-82c1-4e782e25dbe6"
+                      LastKnownName="Product[]"
+                      LastKnownLocation="ModelingProjectClasses.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="6a508888-39d9-429a-82c1-4e782e25dbe6"
+        name="Product[]" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="36ea6eff-5466-4310-8a65-119a6daa2cfb"
+        name="Money" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="998edaef-1c4b-4e19-80d0-6e92eb314488"
+        name="Tray"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="f574e104-40e4-4c63-86a6-8687c8f91036"
+            isDerived="false"
+            sourceEndRoleName="Tray"
+            targetEndRoleName="Product"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="7cdc7c83-eafe-4891-b56b-1cc2e6dc4904"
+              LastKnownName="Product"
+              LastKnownLocation="ModelingProjectClasses.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="0d7d5255-c7fe-445a-a3f7-c0e23b4734ed"
+                  name="Tray"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Shared"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="123fae61-f001-42d2-9e54-3950285f47ac"
+                  name="Product"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="7a0dc492-dd35-49e0-af98-55fc582ed557"
+            name="ProductsOnTray"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="072e057f-fa02-45e6-9ef6-fafb5ca2a001"
+                LastKnownName="List&lt;Product&gt;"
+                LastKnownLocation="ModelingProjectClasses.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="6e91bec7-e238-4adc-9652-64e771425aae"
+            name="TrayNumber"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
+                LastKnownLocation="ModelingProjectClasses.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="6f2ec472-c690-4366-a2de-c7e4c8de74f9"
+            name="Reach"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                LastKnownName="Boolean"
+                LastKnownLocation="ModelingProjectClasses.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="072e057f-fa02-45e6-9ef6-fafb5ca2a001"
+        name="List&lt;Product&gt;" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="b311b257-0d95-499b-8843-43f33b13d8ed"
+        name="Money"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="990b7815-742e-460f-9b55-04755654f39d"
+            name="Cash"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
+                LastKnownLocation="ModelingProjectClasses.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="127e6814-8073-40d2-88df-e0bffdaa92a0"
+            name="Coins"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
+                LastKnownLocation="ModelingProjectClasses.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="463dffae-c53f-4fa0-8be1-6089c880b216"
+            name="CheckFakeCash"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="4a4ead90-71e5-45c7-8df7-c71716c3e3e2"
+                  name="int Cash"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="8e3e53c1-d6ff-437d-bd08-e9ecf12fc303"
+                  direction="Return">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                      LastKnownName="Boolean"
+                      LastKnownLocation="ModelingProjectClasses.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="332d593b-4057-4f99-83ac-0683046b3b72"
+            name="CheckFakeCoins"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="bf299428-8187-4ae5-9ea8-53e41a658eeb"
+                  direction="Return">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                      LastKnownName="Boolean"
+                      LastKnownLocation="ModelingProjectClasses.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="c1282257-5f0f-47a4-8bdb-8769884b821e"
+                  name="int Coin"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="6e3c851a-5ed1-4519-b033-1f92463addf9"
+            name="operator+"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="a215534a-df92-4048-b691-131d1eb2d7ac"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="b311b257-0d95-499b-8843-43f33b13d8ed"
+                      LastKnownName="Money"
+                      LastKnownLocation="ModelingProjectClasses.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="e0b029f9-3f93-4b2a-9538-ce5c369a0195"
+                  name="Money obj1"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="0cc16a21-a751-414d-9448-bd980d3b2778"
+                  name="Money obj2"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="f2134f10-8262-454f-8247-ab6f54cdfefc"
+            name="operator-"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="b516d4e4-cb42-4d69-9eb7-8eefa29fff83"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="b311b257-0d95-499b-8843-43f33b13d8ed"
+                      LastKnownName="Money"
+                      LastKnownLocation="ModelingProjectClasses.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="997b7e0d-cf70-47e2-802b-fe29c7e0a85c"
+                  name="Money obj1"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="41b734dd-b6cc-4c40-9b9b-8df833d2dfd6"
+                  name="Money obj2"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="e5c56851-62cb-4f02-b038-f7fd2499357d"
+            name="operator&gt;"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="c69c0c27-96f9-4ba9-ae2d-bd6bd1b002ea"
+                  name="Money obj1"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="a963c44d-0866-473b-9452-ca2a3b155931"
+                  name="Money obj2"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="22f29256-9433-43b1-8c58-f096cfa06c5c"
+                  direction="Return">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                      LastKnownName="Boolean"
+                      LastKnownLocation="ModelingProjectClasses.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="142a11f4-1986-4d2c-8b74-2fb3c1ca3479"
+            name="operator&lt;"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="bec2d824-0642-44f5-8b48-31f8c06d8439"
+                  name="Money obj1"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="4bad7fe9-35a5-4ab1-accf-1322f3b842fe"
+                  name="Money obj2"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="d5745778-c052-47c6-913e-f26ab42f344e"
+                  direction="Return">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                      LastKnownName="Boolean"
+                      LastKnownLocation="ModelingProjectClasses.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="1c4d464b-9f44-4752-a567-5b75916ef991"
+            name="operator&gt;="
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="459ea972-14bf-4d52-a511-a525543cd85b"
+                  name="Money obj1"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="013f2f66-e0ee-42e6-92b4-fc20498cb766"
+                  name="Money obj2"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="1e6ee4bb-8db0-4374-af64-a547eed8241a"
+                  direction="Return">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                      LastKnownName="Boolean"
+                      LastKnownLocation="ModelingProjectClasses.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="88f44d8d-2838-4b77-9f87-a1b503f911e9"
+            name="operator&lt;="
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="e59d61f9-4d1c-4c4b-9321-74f1c87ce67a"
+                  name="Money obj1"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="21a42a73-1884-4fbd-b227-2829205b3e41"
+                  name="Money obj2"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="b7d272f7-92a7-43cd-944e-9c21b615babd"
+                  direction="Return">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                      LastKnownName="Boolean"
+                      LastKnownLocation="ModelingProjectClasses.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="b592f27a-2a3b-4eef-ad48-eb9318da4879"
+            name="ToString"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="da28be98-9bbd-4b0b-b22c-5005f5f53177"
+                  direction="Return">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="ModelingProjectClasses.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="4600b89e-37f3-4da3-a33a-4d4832d34448"
+        name="ServiceStation"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="d044af6d-1cc1-45cd-afee-fb0b0a744aa7"
+            isDerived="false"
+            sourceEndRoleName="ServiceStation"
+            targetEndRoleName="Money"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="b311b257-0d95-499b-8843-43f33b13d8ed"
+              LastKnownName="Money"
+              LastKnownLocation="ModelingProjectClasses.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="c9fb8c9d-399f-4342-bf45-3ad9e65ae2de"
+                  name="ServiceStation"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Composite"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="b4b5908f-9534-468d-9761-75915ca82bf2"
+                  name="Money"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="true" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="99b3fa42-930a-4086-aca6-1c59a0d6dca9"
+            isDerived="false"
+            sourceEndRoleName="ServiceStation"
+            targetEndRoleName="Product"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="7cdc7c83-eafe-4891-b56b-1cc2e6dc4904"
+              LastKnownName="Product"
+              LastKnownLocation="ModelingProjectClasses.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="7c37fe56-6707-4951-8456-647e0bf09972"
+                  name="ServiceStation"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Composite"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="bca56057-e6df-4b5d-bd81-f138b3725016"
+                  name="Product"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="true" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="b90cd1ec-9b25-4b5e-9b6a-078b42803b82"
+            name="AvailableProducts"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="55f05fe5-b98c-44e4-b4de-15bb50bb4522"
+                LastKnownName="List&lt;List&lt;Product&gt;&gt;"
+                LastKnownLocation="ModelingProjectClasses.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="00a299fe-52c2-473b-a9ad-8110d6f914d4"
+            name="StationMoney"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <classMoniker
+                Id="b311b257-0d95-499b-8843-43f33b13d8ed"
+                LastKnownName="Money"
+                LastKnownLocation="ModelingProjectClasses.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="7cd07bd5-9c14-40fb-8820-5f6aaad73b8d"
+            name="AddDefaults"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="039df8a6-2487-460c-b8f7-a77ace8416be"
+            name="Load"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="fb997e37-7800-4c5b-98eb-df2952e5e99e"
+                  direction="Return">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                      LastKnownName="Boolean"
+                      LastKnownLocation="ModelingProjectClasses.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="8dcba41f-0682-4782-9c07-65f25142b282"
+            name="Save"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="a0e37f12-2e4f-4717-8225-5165262698f9"
+                  direction="Return">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                      LastKnownName="Boolean"
+                      LastKnownLocation="ModelingProjectClasses.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="e08c6c2c-1bbe-4898-8fcd-c1b349da936b"
+            name="ProductToMachine"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="0a921577-483f-4cb8-a94a-f994ca2851e1"
+                  name="object obj"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="139568d4-e493-407d-9b71-812f8c751201"
+                  name="Tray Tray"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="55f05fe5-b98c-44e4-b4de-15bb50bb4522"
+        name="List&lt;List&lt;Product&gt;&gt;" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="c82d001f-2fd4-4ee3-a3a6-c1b6b3a934fe"
+        name="Machine"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="d43c3b44-33c8-45f5-82c0-b5a703a49241"
+            isDerived="false"
+            sourceEndRoleName="Machine"
+            targetEndRoleName="Money"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="b311b257-0d95-499b-8843-43f33b13d8ed"
+              LastKnownName="Money"
+              LastKnownLocation="ModelingProjectClasses.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="0f488d8b-b81c-408a-90ff-c0d84c5b5174"
+                  name="Machine"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Composite"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="397f2ecf-6012-4cda-af89-a2c5885e6ef6"
+                  name="Money"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="true" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="b5323d48-513e-473c-afc7-ebe56b3ccada"
+            isDerived="false"
+            sourceEndRoleName="Machine"
+            targetEndRoleName="Tray"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="998edaef-1c4b-4e19-80d0-6e92eb314488"
+              LastKnownName="Tray"
+              LastKnownLocation="ModelingProjectClasses.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="b26a0810-ddc7-4d95-94b4-78e6cee3035a"
+                  name="Machine"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Composite"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="8be9a5e4-ca76-4275-9c2a-1568e6f25edf"
+                  name="Tray"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="true" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="8deb0df9-18ca-4bd4-93c4-4a13b7f47e36"
+            name="Trays"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="60af8708-7663-4675-83fe-25ce701f3089"
+                LastKnownName="Tray[]"
+                LastKnownLocation="ModelingProjectClasses.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="d621eb08-51bc-4d46-8629-5cfccafe02b1"
+            name="SecretPassword"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="ModelingProjectClasses.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="f500a8b6-669e-45ba-8bbc-7a3d8df5c987"
+            name="CashInto"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <classMoniker
+                Id="b311b257-0d95-499b-8843-43f33b13d8ed"
+                LastKnownName="Money"
+                LastKnownLocation="ModelingProjectClasses.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="d4242bd9-4366-4528-b53e-8814c6a2db48"
+            name="MachineMoney"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <classMoniker
+                Id="b311b257-0d95-499b-8843-43f33b13d8ed"
+                LastKnownName="Money"
+                LastKnownLocation="ModelingProjectClasses.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="a1bb8d0e-cf76-486d-93b0-142ea1c4261c"
+            name="Add_Defaults"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="d1362d46-3554-489a-994c-775f9107b111"
+            name="Load"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="5a26a2cf-7152-475d-82a3-d73d81ba2cda"
+                  direction="Return">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                      LastKnownName="Boolean"
+                      LastKnownLocation="ModelingProjectClasses.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="8abf62b9-1207-44ab-b249-4576ba6a4b3e"
+            name="Save"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="d1300148-dc9b-4cec-ac5b-f0cdf26b535b"
+                  direction="Return">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                      LastKnownName="Boolean"
+                      LastKnownLocation="ModelingProjectClasses.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="8d4880c5-f9d7-489a-9604-4e200a06c6a6"
+            name="CheckPassword"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="39b39a1b-b5e7-497f-b6ff-45f9ebe64189"
+                  name="string password"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="2553048c-4a20-44fc-a099-f3da7d7492ae"
+                  direction="Return">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                      LastKnownName="Boolean"
+                      LastKnownLocation="ModelingProjectClasses.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="df20c1f8-973e-4cc2-84e5-ed82833ff09b"
+            name="CheckUserMoneyAllProducts"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="ee53897e-969b-4fe1-883c-59bca79aee77"
+                  direction="Return">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                      LastKnownName="Boolean"
+                      LastKnownLocation="ModelingProjectClasses.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="7749966b-12e7-4f3d-811f-d65f4da782e5"
+            name="CheckProductAvailable"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="e6f8f5ed-7d19-4106-a6a9-0e9e821f663c"
+                  direction="Return">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                      LastKnownName="Boolean"
+                      LastKnownLocation="ModelingProjectClasses.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="71a637f8-4307-412c-9690-e9b0b131f018"
+            name="GetProduct"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="6101c3a9-8ea1-49cc-936d-691691113477"
+            name="CheckUserCash"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="0f1ffef3-5133-4db5-89c8-310f58c9c025"
+                  direction="Return">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                      LastKnownName="Boolean"
+                      LastKnownLocation="ModelingProjectClasses.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="066aaa50-d9ac-4111-8ac1-e7f729075d9b"
+                  name="Money productPrice)"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="60af8708-7663-4675-83fe-25ce701f3089"
+        name="Tray[]" />
+    </packageHasNamedElement>
+  </packagedElements>
+  <primitiveType
+    Id="220a3521-e091-4221-bae9-3ef9018e845c"
+    name="Integer"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+    name="Boolean"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+    name="String"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="3ab42e7d-4969-445a-b209-471f5cb8209c"
+    name="UnlimitedNatural"
+    isAbstract="false"
+    isLeaf="false" />
+</modelStoreModel>
